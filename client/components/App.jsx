@@ -1,15 +1,16 @@
 import React from 'react'
-
+import { Routes, Route } from 'react-router-dom'
+import NavButton from "./NavButton";
 import Nav from './Nav'
 
 function App() {
+  
+
   return (
     <div>
-      <Nav />
-      <div className='container'><article>
-          <h1>What is Lorem Ipsum? </h1>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry...
-        </article></div>
+    <Routes>
+       <Route path='/' element={<Nav />}></Route>
+    </Routes>
     </div>
   )
 }
