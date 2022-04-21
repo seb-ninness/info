@@ -1,7 +1,7 @@
 const path = require('path')
 const express = require('express')
 
-const widgets = require('./routes/widgets')
+const widgets = require('./routes/route1')
 
 const server = express()
 server.use(express.json())

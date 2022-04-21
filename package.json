@@ -66,7 +66,10 @@
     "@babel/register": "^7.12.10",
     "@vscode/sqlite3": "^5.0.7",
     "express": "^4.17.1",
-    "knex": "^1.0.1"
+    "knex": "^1.0.1",
+    "react-redux": "^8.0.1",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1"
   },
   "prettier": {
     "semi": false,
