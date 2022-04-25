@@ -8,6 +8,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
+    <>
   <header>
     <h3>Seb Ninness | Web Developer</h3>
     <NavButton handleClick={() => setIsOpen(!isOpen)}/>
@@ -17,8 +18,13 @@ function Nav() {
           <li><Link to='/'>  Get in touch  </Link></li>
         </ul> 
     </nav> : null }
-    
-  </header>
+  </header> 
+  <div className='img-container'>
+    <img src='Images/new-york.png' />
+  </div> 
+  
+  </>  
+  
   )
 }
 

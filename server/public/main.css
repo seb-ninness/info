@@ -1,15 +1,15 @@
 body {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   padding: 0;
   margin: 0;
   font-size: 14px;
 }
 header {
-  background-color: #007cb5;
+  background-color: #0191d3;
   padding: 8px 20px;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
 }
 
 .profile {
@@ -30,11 +30,14 @@ header {
   color: rgb(12, 12, 12);
 }
 nav {
-  background: #d9c1e9;
-  border-radius: 3px;
+  background: white;
+  border-radius: 4px;
   padding: 8px 10px;
   position: absolute;
-  top: 53px;
+  top: 120px;
+  right: 5px;
+  box-shadow: 10px 10px 5px #0b0a0a;
+  
 }
 ul {
   padding: 0;
@@ -45,7 +48,7 @@ li {
   border-radius: 3px;
 }
 li:hover {
-  background-color: #c79ee2;
+  background-color: #94bf92;
   font-family: 'Teko', sans-serif;
 }
 li > a {
@@ -54,6 +57,35 @@ li > a {
  
 }
 
+img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 3vw;
+}
+
+
 a {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Bebas Neue', cursive;
+}
+
+@media (max-width: 320px) {
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1200px)  {
+  nav {
+    background: white;
+    border-radius: 4px;
+    padding: 8px 10px;
+    position: absolute;
+    top: 160px;
+    right: 10px;
+    box-shadow: 10px 10px 5px #0b0a0a;
+    font-size: 3vw;
+    
+  }
 }

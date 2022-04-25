@@ -1,6 +1,5 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import NavButton from "./NavButton";
 import Nav from './Nav'
 
 function App() {
