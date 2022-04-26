@@ -5,15 +5,15 @@ body {
   font-size: 14px;
 }
 header {
-  background-color: #0191d3;
-  padding: 8px 20px;
+  background-color: #e9e9e9;
+  padding: 0px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .profile {
-  background-color: #f3f2f2;
+  background-color: #d7ebd7;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -48,7 +48,7 @@ li {
   border-radius: 3px;
 }
 li:hover {
-  background-color: #94bf92;
+  background-color: #d7ebd7;
   font-family: 'Teko', sans-serif;
 }
 li > a {
@@ -57,17 +57,70 @@ li > a {
  
 }
 
-img {
+.nyc-container {
+  background-image: url('Images/new-york.png');
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
+  height: 75vh;
+  padding-bottom: 0px;
+ 
 }
 
+.welly-container {
+  background-image: url('Images/welly.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 75vh;
+  padding-bottom: 0px;
+}
+
+.web-dev{
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: 14vw;
+  font-size: 5vw;
+  
+}
+
+.page-holder {
+  background-color: #e9e9e9;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  height: 100vh;
+}
+
+.page-holder h3{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4vw;
+  padding-top: 10vw;
+}
+
+
+.home-container{
+  display: flex;
+  flex-direction: column;}
+
 h3 {
-  font-size: 3vw;
+  font-size: 4vw;
 }
 
 
 a {
   font-family: 'Bebas Neue', cursive;
+}
+
+button {
+  font-family: 'Bebas Neue', cursive;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+  
 }
 
 @media (max-width: 320px) {
@@ -89,3 +142,4 @@ a {
     
   }
 }
+

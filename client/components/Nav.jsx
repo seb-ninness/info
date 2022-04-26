@@ -8,23 +8,17 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <>
   <header>
-    <h3>Seb Ninness | Web Developer</h3>
+    <h3>Seb Ninness</h3>
     <NavButton handleClick={() => setIsOpen(!isOpen)}/>
     {isOpen ? <nav>
         <ul className='nav-list'> 
           <li><Link to='/'>  Work  </Link></li>
           <li><Link to='/'>  Get in touch  </Link></li>
+          <li><Link to='/'>  Footy Fan?  </Link></li>
         </ul> 
     </nav> : null }
   </header> 
-  <div className='img-container'>
-    <img src='Images/new-york.png' />
-  </div> 
-  
-  </>  
-  
   )
 }
 
