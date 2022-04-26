@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 
+
  // turn into a global state
 function Home() {
   const [city, setCity] = useState(true)
@@ -18,7 +19,8 @@ function Home() {
       <h3>More Content Coming Soon</h3>
     </div>
     <footer>
-    <a href="mailto:seb.ninness12@gmail.com"> <img src=Images/navigation_icon/email.png"> </a>
+      <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
+      <a href="https://www.instagram.com/sebninness/"><i className="fa fa-instagram"> </i> </a>
     </footer>
   </div>
   )

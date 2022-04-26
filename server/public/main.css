@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-size: 14px;
 }
+
 header {
   background-color: #f5f5f5;
   padding: 0px 25px;
@@ -13,7 +14,7 @@ header {
 }
 
 .profile {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -26,7 +27,7 @@ header {
 }
 
 .profile:hover {
-  background-color: #b9eaff;
+  background-color: rgb(208, 208, 208);
   height: 40px;
   width: 40px;
   border-radius: 50%;
@@ -46,31 +47,34 @@ header {
 
 
 nav {
-  background: white;
+  background: #fafafa;
   border-radius: 4px;
-  padding: 8px 10px;
+  padding: 8px 6px;
   position: absolute;
   top: 120px;
   right: 5px;
   box-shadow: 10px 10px 5px #0b0a0a;
-  
+  font-size: 2vw;
 }
+
 ul {
   padding: 0;
 }
+
 li {
   list-style: none;
   padding: 4px 10px;
   border-radius: 3px;
 }
+
 li:hover {
-  background-color: #b9eaff;
+  background-color: rgb(208, 208, 208);
   font-family: 'Teko', sans-serif;
 }
+
 li > a {
   text-decoration: none;
   color: #1b1b1b;
- 
 }
 
 .nyc-container {
@@ -78,7 +82,7 @@ li > a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 75vh;
+  height: 75vw;
   padding-bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -90,7 +94,7 @@ li > a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 75vh;
+  height: 75vw;
   padding-bottom: 0px;
   display: flex;
   flex-direction: column;
@@ -109,7 +113,7 @@ li > a {
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
-  height: 100vh;
+  height: 70vw;
 }
 
 .page-holder h3{
@@ -124,8 +128,96 @@ li > a {
   display: flex;
   flex-direction: column;}
 
-h3 {
+.work-container{
+  background-color: rgb(208, 208, 208);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-container h3{
+  text-align: center;
+  vertical-align: middle;
   font-size: 4vw;
+  padding-top: 10vw;
+}
+
+.contact-container{
+  background-color: rgb(208, 208, 208);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact{
+  text-align: center;
+  vertical-align: middle;
+  font-size: 4vw;
+  padding-top: 6vw;
+}
+
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.email i{
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 2vw;
+}
+
+.phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.phone i{
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 2vw;
+}
+
+.instagram{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.instagram i{
+  text-align: center;
+  vertical-align: middle;
+  color: #000000;
+  font-size: 2vw;
+}
+
+
+.seb-ninness a {
+  font-size: 4vw;
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.seb-ninness a::after{
+  font-size: 4vw;
+  text-decoration: none;
+  color: #000000;
 }
 
 
@@ -171,6 +263,20 @@ a {
   margin: 0.25rem;
   cursor: pointer;
   
+}
+
+footer {
+  height: 16vh;
+  display: flex;
+  align-items: center;
+  background-color: rgb(208, 208, 208);
+  justify-content: end;
+  font-size:6vw;
+}
+
+footer i {
+  color: #000000;
+  padding-right: 8vw;
 }
 
 @media (max-width: 320px) {

@@ -9,13 +9,14 @@ function Nav() {
 
   return (
   <header>
-    <h3>Seb Ninness</h3>
+    <h1 className='seb-ninness'><Link to='/'>Seb Ninness</Link></h1>
     <NavButton handleClick={() => setIsOpen(!isOpen)}/>
     {isOpen ? <nav>
         <ul className='nav-list'> 
-          <li><Link to='/'>  Work  </Link></li>
-          <li><Link to='/'>  Get in touch  </Link></li>
+          <li><Link to='/Work'>  Work  </Link></li>
+          <li><Link to='/Contact'>  Get in touch  </Link></li>
           <li><Link to='/'>  Footy Fan?  </Link></li>
+          <li><Link to='/'>  Home  </Link></li>
         </ul> 
     </nav> : null }
   </header> 
