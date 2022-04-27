@@ -15,7 +15,7 @@ function Nav() {
         <ul className='nav-list'> 
           <li><Link to='/Work'>  Work  </Link></li>
           <li><Link to='/Contact'>  Get in touch  </Link></li>
-          <li><Link to='/'>  Footy Fan?  </Link></li>
+          <li><Link to='/FootyFan'>  Footy Fan?  </Link></li>
           <li><Link to='/'>  Home  </Link></li>
         </ul> 
     </nav> : null }
