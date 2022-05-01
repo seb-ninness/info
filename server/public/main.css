@@ -44,8 +44,6 @@ header {
   color: rgb(0, 0, 0);
 }
 
-
-
 nav {
   background: #fafafa;
   border-radius: 4px;
@@ -285,6 +283,13 @@ footer i {
     flex-direction: column;
   }
 }
+
+@media (max-width: 768px) {
+  .web-dev {
+    font-size: 10vw;
+  }
+}
+
 @media (min-width: 1200px)  {
   nav {
     background: white;
