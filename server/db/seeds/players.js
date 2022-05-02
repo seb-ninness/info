@@ -6,7 +6,7 @@ exports.seed = async function (knex) {
       id: 1,
       name: 'Cristiano Ronaldo',
       position: 'Attack',
-      img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCristiano_Ronaldo&psig=AOvVaw0Wl_2nmAGU5pmX79hbCqPT&ust=1651110617754000&source=images&cd=vfe&ved=2ahUKEwiQlI_AkLP3AhWxXmwGHeA_BR0QjRx6BAgAEAs',
+      img: 'https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F8c%2FCristiano_Ronaldo_2018.jpg&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FCristiano_Ronaldo&tbnid=x7Y_md7cr6KIUM&vet=12ahUKEwi5zrnsxL_3AhUEyKACHdRICOQQMygAegUIARDWAQ..i&docid=CBspcpQflHogDM&w=614&h=921&q=cristiano%20ronaldo&ved=2ahUKEwi5zrnsxL_3AhUEyKACHdRICOQQMygAegUIARDWAQ',
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ exports.seed = async function (knex) {
     },
     {
       id: 3,
-      name: 'Gabriel Martinelli',
+      name: 'Jesus',
       position: 'Attack',
       img: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.arsenal.com%2Fmen%2Fplayers%2Fgabriel-martinelli&psig=AOvVaw1yBj37GXnl08V5bgkiyZPs&ust=1651110962653000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMC4oOmRs_cCFQAAAAAdAAAAABAD',
     },

@@ -1,14 +1,14 @@
-const config = require('../../knexfile').development
-const connection = require('knex')(config)
+const connection = require('./connection')
 
 function getPlayers(db = connection) {
-  return db('player').select()
+  return db('players').select()
 }
 
-// function saveWish(wishObj, db = connection) {
-//   return db('wishes').insert(wishObj)
-// }
+function savePlayer(playerObj, db = connection) {
+  return db('players').insert(playerObj)
+}
 
 module.exports = {
   getPlayers,
+  savePlayer,
 }

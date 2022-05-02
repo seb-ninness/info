@@ -7,8 +7,7 @@ import Contact from './Contact'
 import Footy from './Footy'
 
 function App() {
-  
-
+ 
   return (
     <div className='app-container'>
       <div className='nav-container'>

@@ -14,17 +14,17 @@ router.get('/', (req, res) => {
     })
 })
 
-// router.post('/', (req, res) => {
-//   const addWish = req.body
-//   console.log(addWish)
+router.post('/', (req, res) => {
+  const addPlayer = req.body
+  console.log(addPlayer)
 
-//   db.saveWish(addWish)
-//     .then((wish) => {
-//       res.json(wish)
-//     })
-//     .catch((err) => {
-//       res.status(500).json({ error: err.message })
-//     })
-// })
+  db.savePlayer(addPlayer)
+    .then((id) => {
+      res.json(id)
+    })
+    .catch((err) => {
+      res.status(500).json({ error: err.message })
+    })
+})
 
 module.exports = router
