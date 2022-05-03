@@ -5,7 +5,7 @@ function getPlayers(db = connection) {
 }
 
 function savePlayer(playerObj, db = connection) {
-  return db('players').insert(playerObj)
+  return db('players').insert(playerObj, 'id')
 }
 
 module.exports = {

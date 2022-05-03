@@ -28,13 +28,14 @@ export function sendError(msg) {
   }
 }
 
-export const addToTeam = (id, name, position) => {
+export const addToTeam = (id, name, position, img) => {
   return {
     type: ADD_TO_TEAM,
     newPlayer: {
       id: id,
       position: position,
       name: name,
+      img: img,
       quantity: 1,
     },
   }

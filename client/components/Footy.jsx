@@ -18,14 +18,18 @@ function Footy() {
   const DEFTeamPlayers = currentTeam.filter((player) => player.position === 'Defence' )
   const GoalkeeperTeam = currentTeam.filter((player) => player.position === 'Keeper' )
 
-  console.log(ATTTeamPlayers)
+  
   useEffect(() => {
     dispatch(getPlayersThunk())
-  }, [])
+  }, )
 
   return(
   <>
   <div className='footy-fan'>
+    <p>
+      Here are some of my favourite players. Add your own. Create your top team.
+    </p>
+  
     <h3>Attackers</h3>
       <div className='attackers'>
         
