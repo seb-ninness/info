@@ -6,7 +6,7 @@ function team(currentState = [], action) {
       return [...currentState, action.newPlayer]
 
     case REMOVE_FROM_TEAM:
-      return currentState.filter((item) => item.id !== action.id)
+      return currentState.filter((player) => player.id !== action.id)
 
     default:
       return currentState

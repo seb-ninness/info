@@ -27,23 +27,32 @@ function FootyForm () {
 
   return (
     <form onSubmit={submitHandler}>
-      <h1 className='form-heading'>Add A player</h1>
-        <label htmlFor="name">
-          Name:
-          <input
-            required
-            id='name' name='name' type='text' value={player.name} onChange={changeHandler}
-            placeholder="Footballer"
-          />
-        </label>
-        <label htmlFor='position'>
-          Position:
-        <select id="position" name="position" onChange={changeHandler} value={player.position}>
-          <option  value='Attack'>Attack</option>
-          <option value='Midfield'>Midfield</option>
-          <option value='Defence'>Defence</option>
-        </select></label>
-        <input type="submit" value="Submit" />
+        <h1 className='form-heading'>Add your own players</h1>
+        <div className='form-wrapper'>
+        <div className='text-container'>
+          <label htmlFor="name">
+            Name:
+            <input
+              required
+              id='name' name='name' type='text' value={player.name} onChange={changeHandler}
+              placeholder="Footballer"
+            />
+          </label>
+        </div>
+        <div className='dropdown-container'>
+          <label htmlFor='position'>
+            Position:
+          <select id="position" name="position" onChange={changeHandler} value={player.position}>
+            <option  value='Attack'>Attack</option>
+            <option value='Midfield'>Midfield</option>
+            <option value='Defence'>Defence</option>
+            <option value='Keeper'>Keeper</option>
+          </select></label>
+        </div>
+        <div className='submit-container'>
+          <input type="submit" value="Submit" />
+        </div>
+        </div>
     </form>
   )
 }

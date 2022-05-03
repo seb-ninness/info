@@ -7,7 +7,7 @@ function FootyTeamPlayer(props) {
   return(
       <div className='player'>
         <h3>{name}</h3>
-        <h4>{position}</h4>
+        <h4 className='team-position'>{position}</h4>
       </div>
   )
 }

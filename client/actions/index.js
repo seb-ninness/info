@@ -28,7 +28,7 @@ export function sendError(msg) {
   }
 }
 
-export const addToTeam = (id, position, name) => {
+export const addToTeam = (id, name, position) => {
   return {
     type: ADD_TO_TEAM,
     newPlayer: {
@@ -40,7 +40,7 @@ export const addToTeam = (id, position, name) => {
   }
 }
 
-export const removeFromCart = (id) => {
+export const removeFromTeam = (id) => {
   return {
     type: REMOVE_FROM_TEAM,
     id: id,

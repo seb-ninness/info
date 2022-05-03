@@ -12,9 +12,13 @@ function Footy() {
   const ATTPlayers = footyPlayers.filter((player) => player.position === 'Attack' )
   const MIDPlayers = footyPlayers.filter((player) => player.position === 'Midfield' )
   const DEFPlayers = footyPlayers.filter((player) => player.position === 'Defence' )
+  const Goalie = footyPlayers.filter((player) => player.position === 'Keeper' )
   const ATTTeamPlayers = currentTeam.filter((player) => player.position === 'Attack' )
   const MIDTeamPlayers = currentTeam.filter((player) => player.position === 'Midfield' )
   const DEFTeamPlayers = currentTeam.filter((player) => player.position === 'Defence' )
+  const GoalkeeperTeam = currentTeam.filter((player) => player.position === 'Keeper' )
+
+  console.log(ATTTeamPlayers)
   useEffect(() => {
     dispatch(getPlayersThunk())
   }, [])
@@ -35,6 +39,10 @@ function Footy() {
     <div className='defenders'>
       {DEFPlayers.map( player => <FootyPlayer key={player.id} player={player} />)}
     </div>
+    <h3>Goal Keepers</h3>
+    <div className='defenders'>
+      {Goalie.map( player => <FootyPlayer key={player.id} player={player} />)}
+    </div>
     <div className='footy-form'>
       <FootyForm />
     </div>
@@ -42,10 +50,18 @@ function Footy() {
   </div>
   <div className='team-selection'>
     <h3 className='team-header'>Your lineup:</h3>
-    {currentTeam.map( player => <FootyTeamPlayer key={player.id} player={player} />)}
-      {/* {ATTTeamPlayers.length < 4? ATTTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) : alert('Mate we are playing 4-3-3 you have too many attackers!')}
-      {ATTTeamPlayers.length < 4? MIDTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) : alert('Mate we are playing 4-3-3 you have too many midfielders!')}
-      {ATTTeamPlayers.length < 5? DEFTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) : alert('Mate we are playing 4-3-3 you have too many defenders!')} */}
+      <div className='team-att'>
+         {ATTTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) }
+      </div>
+      <div className='team-mid'>
+        {MIDTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) }
+      </div>
+      <div className='team-def'>
+        {DEFTeamPlayers.map( player => <FootyTeamPlayer key={player.id} player={player}/>) }
+      </div>
+      <div className='team-def'>
+        {GoalkeeperTeam.map( player => <FootyTeamPlayer key={player.id} player={player}/>) }
+      </div>
   </div>
   </>
   )

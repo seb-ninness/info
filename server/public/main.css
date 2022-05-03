@@ -5,6 +5,10 @@ body {
   font-size: 14px;
 }
 
+h4 {
+  margin: 0.1vw;
+}
+
 header {
   background-color: #f5f5f5;
   padding: 0px 25px;
@@ -287,6 +291,10 @@ footer i {
   align-items: center;
 }
 
+.footy-fan h3 {
+  color: red;
+}
+
 .attackers{
   display: flex;
   flex-wrap: wrap;
@@ -301,12 +309,17 @@ footer i {
 }
 
 .player{
-  padding: 0.5vw;
+  padding: 0.01vw 2.4vw;
   font-size: 1.8vw;
 }
 
 form {
   padding: 0.4vw;
+}
+
+.form-wrapper{
+  display: flex;
+  flex-direction: row;
 }
 
 .form-heading{
@@ -315,12 +328,90 @@ form {
   font-size: 1.8vw
 }
 
+.text-container{
+  display: flex;
+  justify-content: center;
+  padding: 0.2vw;
+  font-size: 1.5vw;
+}
+
+.text-container input{
+  background-color: white;
+  border: thin solid red;
+  border-radius: 10px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 1.5em;
+
+  margin: 0.1em;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.dropdown-container{
+  display: flex;
+  justify-content: center;
+  padding: 0.2vw;
+  font-size: 1.5vw;
+}
+
+select {
+  background-color: white;
+  border: thin solid red;
+  border-radius: 10px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.1em 1.5em;
+
+  margin: 0.1em;      
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.submit-container{
+  display: flex;
+  justify-content: center;
+  padding: 0.2vw;
+}
+
+.submit-container input{
+  background-color: rgb(4, 4, 4);
+  color: white;
+  border: thin solid red;
+  border-radius: 10px;
+  display: inline-block;
+  font: inherit;
+  
+  padding: 0.3em;
+  margin: 0.1em;       
+}
+
+.submit-container input:hover{
+  background-color: rgb(255, 255, 255);
+  color: #000000;
+  border: thin solid red;
+  border-radius: 10px;
+  display: inline-block;
+  font: inherit;
+  
+  padding: 0.3em;
+  margin: 0.1em;       
+}
+
 .team-selection {
-  background-color: rgb(0, 121, 77);
+  background-image: url('Images/Pitch.jpeg');
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 50vh;
+  height: 60vw;
 }
 
 .team-header{
@@ -329,6 +420,54 @@ form {
   font-size: 3vw;
   justify-content: center;
   color: red;
+}
+
+.team-position {
+  color: red;
+}
+
+.team-att{
+  display: flex;
+  justify-content: center;
+}
+
+.team-mid{
+  display: flex;
+  justify-content: center;
+}
+
+.team-def{
+  display: flex;
+  justify-content: center;
+}
+
+.add-button:hover{
+  cursor: pointer;
+}
+
+.add-button img {
+  max-width: 2.2vw;
+}
+.add-button img:active {
+  transform:scale(1.2);
+  box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.minus-button:hover{
+  cursor: pointer;
+}
+
+.minus-button img {
+  max-width: 2.4vw;
+}
+.minus-button img:active {
+  transform:scale(1.2);
+  box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 320px) {
