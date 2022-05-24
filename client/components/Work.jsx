@@ -19,7 +19,7 @@ function Work() {
   </div>
   <footer>
     <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
-    <a href="https://www.instagram.com/sebninness/"><i className="fa fa-instagram"> </i> </a>
+    <a href="https://github.com/seb-ninness?tab=repositories"><i className="fa fa-github"> </i> </a>
   </footer>
 </>
   )
