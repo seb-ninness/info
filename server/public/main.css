@@ -114,19 +114,49 @@ li > a {
   margin-bottom: 4vw;
 }
 
+.manu-mana {
+  width: 35vw;
+  padding: 3px
+}
+
+.manu-container h3{
+  padding: 0px;
+  margin: 2px;
+  font-size: 2vw;
+}
+
+.manu-container p{
+  padding: 0px;
+  margin-top: 5px;
+  font-size: 2vw;
+}
+
+.manu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .page-holder {
   background-color: #f5f5f5;
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 100%;
-  height: 70vw;
+  width: 100vw;
+  height: 80vw;
 }
 
 .page-holder h3{
   text-align: center;
   vertical-align: middle;
   font-size: 4vw;
-  padding-top: 10vw;
+}
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 
@@ -139,7 +169,7 @@ li > a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 110vw;
   display: flex;
   flex-direction: column;
 }
@@ -148,7 +178,7 @@ li > a {
   text-align: center;
   vertical-align: middle;
   font-size: 4vw;
-  padding-top: 10vw;
+  padding-top: 2vw;
 }
 
 .contact-container{
@@ -156,7 +186,7 @@ li > a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 100vh;
+  height: 110vw;
   display: flex;
   flex-direction: column;
 }
@@ -164,8 +194,12 @@ li > a {
 .contact{
   text-align: center;
   vertical-align: middle;
-  font-size: 4vw;
-  padding-top: 6vw;
+  font-size: 5vw;
+  padding-top: 5vw;
+}
+
+h3 {
+  font-family: 'Bebas Neue', cursive;
 }
 
 .email {
@@ -173,13 +207,13 @@ li > a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: 4vw 2vw;
 }
 .email i{
   text-align: center;
   vertical-align: middle;
   color: #000000;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .phone {
@@ -187,14 +221,14 @@ li > a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: 4vw 2vw;
 }
 
 .phone i{
   text-align: center;
   vertical-align: middle;
   color: #000000;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 .instagram{
@@ -202,14 +236,14 @@ li > a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 2px;
+  padding: 4vw 2vw;
 }
 
 .instagram i{
   text-align: center;
   vertical-align: middle;
   color: #000000;
-  font-size: 2vw;
+  font-size: 3vw;
 }
 
 
@@ -272,10 +306,10 @@ a {
 }
 
 footer {
-  height: 16vh;
+  height: 20vw;
   display: flex;
   align-items: center;
-  background-color: rgb(208, 208, 208);
+  background-color: rgb(191, 191, 191);
   justify-content: end;
   font-size:6vw;
 }
@@ -409,8 +443,6 @@ select {
 }
 
 .file-container input{
-  
-  
   
   border-radius: 10px;
   display: inline-block;
