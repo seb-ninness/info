@@ -6,6 +6,7 @@
   "main": "server/index.js",
   "scripts": {
     "start": "node server",
+    "build": "webpack && knex migrate:latest",
     "test": "jest --watchAll",
     "dev": "run-p dev:client dev:server",
     "dev:client": "webpack --watch --config client/webpack.config.js",
