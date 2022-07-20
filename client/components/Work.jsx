@@ -17,10 +17,6 @@ function Work() {
       </div> 
    <h3>More Content Coming Soon</h3>
   </div>
-  <footer>
-    <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
-    <a href="https://github.com/seb-ninness?tab=repositories"><i className="fa fa-github"> </i> </a>
-  </footer>
 </>
   )
 }

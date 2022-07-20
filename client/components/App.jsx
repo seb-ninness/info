@@ -5,6 +5,7 @@ import Home from './Home'
 import Work from './Work'
 import Contact from './Contact'
 import Footy from './Footy'
+import Footer from './Footer'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
             <Route path='/Contact' element={<Contact />}></Route>
             <Route path='/FootyFan' element={<Footy />}></Route>
           </Routes>
+        <Footer />
       </div>
     </div>
   )
