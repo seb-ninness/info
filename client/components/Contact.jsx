@@ -1,4 +1,5 @@
 import React from 'react'
+import { MdEmail } from 'react-icons/md'
 
 
 function Contact() {
@@ -6,16 +7,13 @@ function Contact() {
 
   return(
     <>
-  <div className='contact-container'>
-   <h3 className='contact'>Contact</h3>
-   <div className='email'><a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"><h3>Email</h3></i> </a></div>
-   <div className='phone'><i className="fa fa-phone"><h3>+64 2040164271</h3></i></div>
-   <div className='instagram'><a href="https://github.com/seb-ninness?tab=repositories"><i className="fa fa-github"><h3>GitHub</h3></i> </a></div>
+   <div className='contact-container'>
+    <a href="mailto:seb.ninness12@gmail.com">
+      <h3 className='contact'>Send me an email and I will get back to you as soon as possible!</h3>
+      <MdEmail className='email-icon'/>
+    </a>
+
   </div>
-  <footer>
-      <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
-      <a href="https://github.com/seb-ninness?tab=repositories"><i className="fa fa-github"> </i> </a>
-    </footer>
     </>
   )
 }

@@ -15,7 +15,6 @@ function Work() {
           <img className='manu-mana' src='Images/Manu-Mana.png'></img>
         </div> 
       </div> 
-   <h3>More Content Coming Soon</h3>
   </div>
 </>
   )

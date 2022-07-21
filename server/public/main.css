@@ -5,11 +5,32 @@ body {
   font-size: 14px;
 }
 
+h1{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.makeStyles-title-6 h1{
+  margin: 2px;
+}
+
+div.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-decoration: none;
+}
+
+p.css-ahj2mt-MuiTypography-root {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+}
+
+
+
 .navbar {
-  background-color: rgb(0, 0, 0);
-  height: 60px;
+  background-color: white;
+  height: 80px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
 }
@@ -18,9 +39,23 @@ body {
   margin-left: 2rem;
   font-size: 2rem;
   background: none;
-  color: white;
+  color: black;
   list-style: none;
 }
+
+.seb-ninness a{
+  color: black;
+  text-decoration: none;
+  display: flex;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+
+.css-i4bv87-MuiSvgIcon-root{
+  color: #000000;
+  
+}
+
 
 .nav-menu {
   background-color: #000000;
@@ -83,16 +118,20 @@ svg {
   margin-right: 16px;
 }
 
-
-.welly-container {
-  background-image: url('Images/welly.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 75vw;
-  padding-bottom: 0px;
+.Home {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 100vh;
+}
+
+.Home h1 {
+  font-size: 7vw;
+}
+
+.Home h3 {
+  font-size: 4vw;
 }
 
 .web-dev{
@@ -103,43 +142,7 @@ svg {
   margin-bottom: 4vw;
 }
 
-.manu-mana {
-  width: 35vw;
-  padding: 3px
-}
 
-.manu-container h3{
-  padding: 0px;
-  margin: 2px;
-  font-size: 2vw;
-}
-
-.manu-container p{
-  padding: 0px;
-  margin-top: 5px;
-  font-size: 2vw;
-}
-
-.manu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-holder {
-  background-color: #f5f5f5;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100vw;
-  height: 80vw;
-}
-
-.page-holder h3{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 4vw;
-}
 
 .projects{
   display: flex;
@@ -174,17 +177,29 @@ svg {
   background-color: rgb(208, 208, 208);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 110vw;
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-container a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .contact{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 5vw;
-  padding-top: 5vw;
+  font-size: 4vw;
+  color: black;
+  
+}
+
+.email-icon{
+  font-size: 12vw;
+  color: white;
 }
 
 h3 {
@@ -236,22 +251,9 @@ h3 {
 }
 
 
-.seb-ninness a {
-  font-size: 4vw;
-  text-decoration: none;
-  color: #000000;
-
-}
-
-.seb-ninness a::after{
-  font-size: 4vw;
-  text-decoration: none;
-  color: #000000;
-}
-
-
 a {
   font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
 }
 
 .city-button {

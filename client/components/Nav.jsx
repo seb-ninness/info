@@ -14,6 +14,7 @@ function Nav() {
   return (
   <div className='navbar'>
     <Link to='#' className='menu-bars'><FaBars onClick={showSideBar}/></Link>
+    <h1 className='seb-ninness'><Link to='/'>Seb Ninness</Link></h1>
     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
         <ul onClick={showSideBar} className='nav-menu-items'> 
           <li className='navbar-toggle'>
