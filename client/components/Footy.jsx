@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import FootyPlayer from './FootyPlayer'
-import FootyForm from './FootyForm'
+// import FootyForm from './FootyForm'
 import FootyTeamPlayer from './FootyTeamPlayer'
 import { getPlayersThunk } from '../actions/index'
 
@@ -27,7 +27,7 @@ function Footy() {
   <>
   <div className='footy-fan'>
     <p>
-      Here are some of my favourite players. Add your own. Create your top team.
+      Here are some of my favourite players. Create your top team.
     </p>
   
     <h3>Attackers</h3>
@@ -47,9 +47,9 @@ function Footy() {
     <div className='defenders'>
       {Goalie.map( player => <FootyPlayer key={player.id} player={player} />)}
     </div>
-    <div className='footy-form'>
+    {/* <div className='footy-form'>
       <FootyForm />
-    </div>
+    </div> */}
     
   </div>
   <div className='team-selection'>

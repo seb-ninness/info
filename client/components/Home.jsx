@@ -1,35 +1,50 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { makeStyles } from '@material-ui/core/styles'
+import { Collapse, CssBaseline, IconButton } from '@material-ui/core';
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
+import { useEffect, useState } from 'react'
+import HomeContent from './HomeContent';
+import { Link as Scroll } from 'react-scroll'
 
+const useStyles = makeStyles((theme) => ({
+  root: {
+    minHeight: '100vh',
+    backgroundImage: `url(${'Images/welly.jpg'})`,
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+  },
+  goDown: {
+    color: 'black',
+    fontSize: '4vw'
+  }
+}))
 
  // turn into a global state
 function Home() {
-  const [city, setCity] = useState(true)
+  const classes = useStyles();
+  const [checked, setChecked] = useState(false)
 
-  const toggleCityMode = () => {
-    setCity(!city)
-  }
+  useEffect( () => {
+    setChecked(true);
+  },[])
+
+  
 
   return(
-  <div className= 'home-container'>
-    <div className={city? 'nyc-container' : 'welly-container'}>
-      <h3 className='web-dev'>Web Development & Design</h3>
-      <button className='city-button' onClick={toggleCityMode}>{city ? 'WELLY' : 'NYC' } MODE</button>
-    </div> 
-    <div className='page-holder'>
-      <h3>Projects</h3>
-      <div className='projects'>
-        <div className='manu-container'>
-          <h3>Manu-Mana</h3>
-          <p>Bird monitoring app for my final project at Enspiral Dev Academy</p>
-          <img className='manu-mana' src='Images/Manu-Mana.png'></img>
-        </div> 
-      </div> 
-      <h3>More Content Coming Soon</h3>
-    </div>
-    <footer>
-      <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
-      <a href="https://www.instagram.com/sebninness/"><i className="fa fa-github"> </i> </a>
-    </footer>
+  <div className={classes.root} id='header'>
+    <CssBaseline />
+    <Collapse orientation='horizontal' in={checked}
+    { ... (checked ? { timeout: 1000 } : {})}>
+      <div className='Home'>
+        <h1>Full Stack Web Development</h1>
+        <Scroll to="work" smooth={true}>
+          <IconButton>
+              <KeyboardDoubleArrowDownIcon className={classes.goDown} />
+          </IconButton>
+        </Scroll>
+      </div>
+     </Collapse>
+     <HomeContent />
   </div>
   )
 }

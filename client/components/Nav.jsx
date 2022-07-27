@@ -1,25 +1,38 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import NavButton from './NavButton';
+import { FaBars } from 'react-icons/fa'
+import { AiOutlineClose } from 'react-icons/ai'
+import { sidebarData } from '../sidebar/SideBarData'
 
 // turn my state to a global state
 
 function Nav() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [sidebar, setSideBar] = useState(false)
+
+  const showSideBar = () => setSideBar(!sidebar)
 
   return (
-  <header>
+  <div className='navbar'>
+    <Link to='#' className='menu-bars'><FaBars onClick={showSideBar}/></Link>
     <h1 className='seb-ninness'><Link to='/'>Seb Ninness</Link></h1>
-    <NavButton handleClick={() => setIsOpen(!isOpen)}/>
-    {isOpen ? <nav>
-        <ul className='nav-list'> 
-          <li><Link to='/Work'>  Work  </Link></li>
-          <li><Link to='/Contact'>  Get in touch  </Link></li>
-          <li><Link to='/FootyFan'>  Footy Fan?  </Link></li>
-          <li><Link to='/'>  Home  </Link></li>
-        </ul> 
-    </nav> : null }
-  </header> 
+    <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
+        <ul onClick={showSideBar} className='nav-menu-items'> 
+          <li className='navbar-toggle'>
+            <Link to='#' className='menu-bars'><AiOutlineClose /></Link>
+          </li>
+          {sidebarData.map((item, index) => {
+            return (
+              <li key={index} className={item.cName}>
+                <Link to={item.path}>
+                  {item.icon}
+                  {item.title}
+                </Link>
+              </li>
+            )
+          })}
+        </ul>
+    </nav>
+  </div> 
   )
 }
 

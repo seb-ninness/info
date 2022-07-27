@@ -1,27 +1,30 @@
 import React from 'react'
+import MediaCard from './ImageCardHome';
+import workData from '../staticData/workData';
+import Carousel from 'react-elastic-carousel';
 
 
 function Work() {
-  
+  // const breakpoints = [
+  //   {width: 500, itemsToShow: 1},
+  //   {width: 800, itemsToShow: 2},
+  //   {width: 1400, itemsToShow: 3},
+  // ]
 
   return(
-    <>
-  <div className='work-container'>
-  <h3>Projects</h3>
-      <div className='projects'>
-        <div className='manu-container'>
-          <h3>Manu-Mana</h3>
-          <p>Bird monitoring app for my final project at Enspiral Dev Academy</p>
-          <img className='manu-mana' src='Images/Manu-Mana.png'></img>
-        </div> 
-      </div> 
-   <h3>More Content Coming Soon</h3>
-  </div>
-  <footer>
-    <a href="mailto:seb.ninness12@gmail.com"> <i className="fa fa-envelope"></i> </a>
-    <a href="https://github.com/seb-ninness?tab=repositories"><i className="fa fa-github"> </i> </a>
-  </footer>
-</>
+    <div className='work-container'>
+      <div className='work-heading'>
+        <h1>Previous Web Development Projects</h1>
+      </div>
+      <div className='work-content'>
+        <Carousel >
+          <MediaCard workData={workData[0]} />
+          <MediaCard workData={workData[1]} />
+        </Carousel>
+      </div>
+     
+    </div>
+  
   )
 }
 

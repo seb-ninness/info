@@ -5,105 +5,133 @@ body {
   font-size: 14px;
 }
 
-p {
-  font-size: 3vw;
+h1{
+  font-family: 'Bebas Neue', cursive;
 }
 
-h4 {
-  margin: 0.1vw;
+.makeStyles-title-6 h1{
+  margin: 2px;
 }
 
-header {
-  background-color: #f5f5f5;
-  padding: 0px 25px;
+div.css-1ri6ub7-MuiPaper-root-MuiCard-root{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  text-decoration: none;
+}
+
+p.css-ahj2mt-MuiTypography-root {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 1.5rem;
+}
+
+
+
+.navbar {
+  background-color: white;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.profile {
-  background-color: #f5f5f5;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none
-
-}
-
-.profile:hover {
-  background-color: rgb(208, 208, 208);
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: none
-
-}
-.user-circle-icon {
-  height: 30px;
-  width: 30px;
-  color: rgb(0, 0, 0);
-}
-
-nav {
-  background: #fafafa;
-  border-radius: 4px;
-  padding: 8px 6px;
-  position: absolute;
-  top: 120px;
-  right: 5px;
-  box-shadow: 10px 10px 5px #0b0a0a;
-  font-size: 2vw;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
   list-style: none;
-  padding: 4px 10px;
-  border-radius: 3px;
 }
 
-li:hover {
-  background-color: rgb(208, 208, 208);
-  font-family: 'Teko', sans-serif;
+.menu-bars {
+  margin-left: 2rem;
+  font-size: 2rem;
+  background: none;
+  color: black;
+  list-style: none;
 }
 
-li > a {
+.seb-ninness a{
+  color: black;
   text-decoration: none;
-  color: #1b1b1b;
+  display: flex;
+  margin-right: 2rem;
+  font-size: 2rem;
 }
 
-.nyc-container {
-  background-image: url('Images/new-york.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 75vw;
-  padding-bottom: 0px;
-  display: flex;
-  flex-direction: column;
- 
+.css-i4bv87-MuiSvgIcon-root{
+  color: #000000;
+  
 }
 
-.welly-container {
-  background-image: url('Images/welly.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 75vw;
-  padding-bottom: 0px;
+
+.nav-menu {
+  background-color: #000000;
+  color: white;
+  width: 250px;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: 850ms;
+}
+
+.nav-menu.active {
+  left: 0;
+  transition: 358ms;
+
+}
+
+.nav-text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 0px 8px 16px;
+  list-style: none;
+  height: 68px;
+}
+
+.nav-text a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 18px;
+  width: 95%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+  border-radius: 4px;
+}
+
+.nav-text a:hover {
+  background-color: rgb(30, 30, 31);
+}
+
+.nav-menu-items {
+  width: 100%;
+}
+
+.navbar-toggle {
+  background-color: #000000;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+svg {
+  margin-right: 16px;
+}
+
+.Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
+  height: 100vh;
+}
+
+.Home h1 {
+  font-size: 7vw;
+}
+
+.Home h3 {
+  font-size: 4vw;
 }
 
 .web-dev{
@@ -114,88 +142,39 @@ li > a {
   margin-bottom: 4vw;
 }
 
-.manu-mana {
-  width: 35vw;
-  padding: 3px
-}
-
-.manu-container h3{
-  padding: 0px;
-  margin: 2px;
-  font-size: 2vw;
-}
-
-.manu-container p{
-  padding: 0px;
-  margin-top: 5px;
-  font-size: 2vw;
-}
-
-.manu-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.page-holder {
-  background-color: #f5f5f5;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 100vw;
-  height: 80vw;
-}
-
-.page-holder h3{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 4vw;
-}
-
-.projects{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-
 .home-container{
   display: flex;
   flex-direction: column;}
 
-.work-container{
-  background-color: rgb(208, 208, 208);
+
+
+.contact-container{
+  background-image: url('Images/welly.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 110vw;
+  min-height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.work-container h3{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 4vw;
-  padding-top: 2vw;
-}
-
-.contact-container{
-  background-color: rgb(208, 208, 208);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 110vw;
+.contact-container a{
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .contact{
-  text-align: center;
-  vertical-align: middle;
-  font-size: 5vw;
-  padding-top: 5vw;
+  font-size: 4vw;
+  color: black;
+  
+}
+
+.email-icon{
+  font-size: 12vw;
+  color: white;
 }
 
 h3 {
@@ -247,22 +226,9 @@ h3 {
 }
 
 
-.seb-ninness a {
-  font-size: 4vw;
-  text-decoration: none;
-  color: #000000;
-
-}
-
-.seb-ninness a::after{
-  font-size: 4vw;
-  text-decoration: none;
-  color: #000000;
-}
-
-
 a {
   font-family: 'Bebas Neue', cursive;
+  text-decoration: none;
 }
 
 .city-button {
@@ -305,22 +271,29 @@ a {
   
 }
 
-footer {
-  height: 20vw;
-  display: flex;
-  align-items: center;
-  background-color: rgb(191, 191, 191);
-  justify-content: end;
-  font-size:6vw;
+.work-container{
+  background-image: url('Images/welly.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
 }
 
-footer i {
-  color: #000000;
-  padding-right: 8vw;
+.work-heading{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2vw;
+  padding: 20px 0px;
+}
+
+.work-content{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footy-fan{
-  background-color: rgb(208, 208, 208);
+  background-image: url('Images/welly.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 30px;
@@ -331,6 +304,42 @@ footer i {
 
 .footy-fan h3 {
   color: red;
+}
+
+button.krmNah:hover, button.krmNah:focus {
+  box-shadow: 0 0 1px 3px white;
+  background-color: #ffffff;
+}
+
+button.krmNah {
+  background-color: #ffffff;
+  box-shadow: 0 0 1px 3px white;
+}
+
+button.eWjCzc {
+  background-color: #ffffff;
+}
+
+button.eAyARa:hover button.eAyARa:active button.eWjCzc:focus {
+  background-color: gainsboro;
+}
+
+button.eWjCzc:hover, button.eWjCzc:focus, button.eWjCzc::selection {
+  background-color: gainsboro;
+  box-shadow: 0 0 1px 3px white;
+}
+
+button.eAyARa:disabled {
+  background-color: transparent;
+}
+
+
+button.eAyARa:hover {
+  background-color: transparent;
+}
+
+.sc-bczRLJ:hover{
+  background-color: gainsboro;
 }
 
 .attackers{
@@ -510,6 +519,13 @@ select {
   justify-content: center;
 }
 
+.transform-card:hover {
+  cursor: pointer;
+  transform:scale(1.2);
+  box-shadow:2px 2px 10px rgba(0,0,0,0.3);
+}
+
+
 .add-button:hover{
   cursor: pointer;
 }
@@ -540,25 +556,4 @@ select {
 }
 
 
-
-@media (max-width: 320px) {
-  header {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1200px)  {
-  nav {
-    background: white;
-    border-radius: 4px;
-    padding: 8px 10px;
-    position: absolute;
-    top: 160px;
-    right: 10px;
-    box-shadow: 10px 10px 5px #0b0a0a;
-    font-size: 3vw;
-    
-  }
-}
 
