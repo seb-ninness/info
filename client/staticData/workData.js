@@ -4,7 +4,7 @@ const workData = [
     imageURL: 'Images/manu-mana.png',
     desc: 'React, NodeJs full stack app I made for our final group project at the Dev Acadamy.',
     time: 1500,
-    link: 'https://manu-mana.herokuapp.com/',
+    link: 'https://Manu-Mana.herokuapp.com/',
   },
   {
     title: 'David Moffatt - Personal Training',

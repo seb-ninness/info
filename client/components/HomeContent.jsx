@@ -16,8 +16,8 @@ const useStyles = makeStyles((theme) => ({
     }
     
   },
-
-}))
+ 
+}),{index: 1})
 
 function HomeContent() {
  const classes = useStyles();

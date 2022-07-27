@@ -18,7 +18,7 @@ const useStyles = makeStyles({
   title: {
     fontFamily: 'Bebas-Neue',
   }
-})
+}, {index: 1})
 
 export default function MediaCard({ workData, checked }) {
   const classes = useStyles()
