@@ -4,6 +4,7 @@ import { FaBars } from 'react-icons/fa'
 import { AiOutlineClose } from 'react-icons/ai'
 import { sidebarData } from '../sidebar/SideBarData'
 
+
 // turn my state to a global state
 
 function Nav() {

@@ -9,23 +9,6 @@ h1{
   font-family: 'Bebas Neue', cursive;
 }
 
-.makeStyles-title-6 h1{
-  margin: 2px;
-}
-
-div.css-1ri6ub7-MuiPaper-root-MuiCard-root{
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  text-decoration: none;
-}
-
-p.css-ahj2mt-MuiTypography-root {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 1.5rem;
-}
-
-
-
 .navbar {
   background-color: white;
   height: 80px;
@@ -49,11 +32,6 @@ p.css-ahj2mt-MuiTypography-root {
   display: flex;
   margin-right: 2rem;
   font-size: 2rem;
-}
-
-.css-i4bv87-MuiSvgIcon-root{
-  color: #000000;
-  
 }
 
 
@@ -170,6 +148,9 @@ svg {
 .contact{
   font-size: 4vw;
   color: black;
+  display: flex;
+  justify-content: center;
+  align-self: center;
   
 }
 
@@ -307,40 +288,23 @@ a {
   color: red;
 }
 
-button.krmNah:hover, button.krmNah:focus {
-  box-shadow: 0 0 1px 3px white;
-  background-color: #ffffff;
+.rec.rec-arrow{
+  background-color: white;
 }
 
-button.krmNah {
-  background-color: #ffffff;
-  box-shadow: 0 0 1px 3px white;
+.rec.rec-arrow_hover .rec.rec-arrow_focus .rec.rec-arrow_active{
+  background: transparent;
 }
 
-button.eWjCzc {
-  background-color: #ffffff;
+.rec.rec-dot {
+  background: transparent;
+  border: 2px black solid;
+  
 }
-
-button.eAyARa:hover button.eAyARa:active button.eWjCzc:focus {
-  background-color: gainsboro;
-}
-
-button.eWjCzc:hover, button.eWjCzc:focus, button.eWjCzc::selection {
-  background-color: gainsboro;
-  box-shadow: 0 0 1px 3px white;
-}
-
-button.eAyARa:disabled {
-  background-color: transparent;
-}
-
-
-button.eAyARa:hover {
-  background-color: transparent;
-}
-
-.sc-bczRLJ:hover{
-  background-color: gainsboro;
+.rec.rec-dot_active .rec.rec-dot_focus .rec.rec-dot_hover {
+  background: white;
+  border: 2px black solid;
+  box-shadow: 0 0 1px 3px rgb(3, 0, 9)
 }
 
 .attackers{

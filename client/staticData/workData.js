@@ -1,10 +1,10 @@
 const workData = [
   {
     title: 'Mana Manu',
-    imageURL: 'Images/manu-mana.png',
+    imageURL: 'Images/Manu-Mana.png',
     desc: 'React, NodeJs full stack app I made for our final group project at the Dev Acadamy.',
     time: 1500,
-    link: 'https://Manu-Mana.herokuapp.com/',
+    link: 'https://manu-mana.herokuapp.com/',
   },
   {
     title: 'David Moffatt - Personal Training',
