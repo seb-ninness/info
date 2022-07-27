@@ -73,6 +73,7 @@ p.css-ahj2mt-MuiTypography-root {
 .nav-menu.active {
   left: 0;
   transition: 358ms;
+  z-index: 1;
 
 }
 
