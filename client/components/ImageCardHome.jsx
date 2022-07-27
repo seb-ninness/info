@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 645,
+    maxWidth: 725,
     backgroundColor: 'rgba(0,0,0,0.5)',
     margin: "20px",
   },
   media: {
-    height: 440,
+    height: 450,
   },
   title: {
     fontFamily: 'Bebas-Neue',
@@ -26,7 +26,7 @@ export default function MediaCard({ workData, checked }) {
   return (
   
       
-        
+        <div className='transform-card'> 
           <Card onClick={ () =>  window.location.href=workData.link} className={classes.root} sx={{ maxWidth: 345 }}>
             <CardMedia
               component="img"
@@ -43,7 +43,7 @@ export default function MediaCard({ workData, checked }) {
               </Typography>
             </CardContent>
           </Card>
-     
+        </div>
     
     
   );
